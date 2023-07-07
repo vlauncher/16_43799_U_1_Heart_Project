@@ -45,7 +45,7 @@ export const fetchSinglePrediction = createAsyncThunk(
   async (predictionId, thunkAPI) => {
     try {
         const token = thunkAPI.getState().auth.user["access"];
-      const response = await axios.get(`http://localhost:8000/api/result/${predictionId}/`,{
+      const response = await axios.get(`${apiUrl}result/${predictionId}/`,{
         headers:{
             Authorization: `Bearer ${token}`,
           }
