@@ -35,6 +35,7 @@ class MyUserManager(BaseUserManager):
             username=username
         )
         user.is_admin = True
+        user.is_active = True
         user.save(using=self._db)
         return user
 
@@ -55,7 +56,7 @@ class User(AbstractBaseUser):
     objects = MyUserManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['first_name','last_name']
+    REQUIRED_FIELDS = ['first_name','last_name','username']
 
     def __str__(self):
         return self.email
