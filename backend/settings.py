@@ -61,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, './build'),],
+            os.path.join(BASE_DIR, './frontend/build'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR / 'staticfiles/')
-STATICFILES_DIRS = [BASE_DIR / "./build/static"]
+STATICFILES_DIRS = [BASE_DIR / "./frontend/build/static"]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type

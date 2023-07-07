@@ -18,7 +18,7 @@ export const register = createAsyncThunk(
   'auth/register',
   async (user, thunkAPI) => {
     try {
-      const response = await axios.post('http://localhost:8000/register/',user)
+      const response = await axios.post('/register/',user)
       if (response.data) {
         localStorage.setItem('user', JSON.stringify(response.data))
       }
@@ -35,7 +35,7 @@ export const register = createAsyncThunk(
 // Login user
 export const login = createAsyncThunk('auth/login', async (user, thunkAPI) => {
   try {
-    const response = await axios.post('http://localhost:8000/login/',user)
+    const response = await axios.post('/login/',user)
       if (response.data) {
         localStorage.setItem('user', JSON.stringify(response.data))
       }
@@ -49,7 +49,7 @@ export const login = createAsyncThunk('auth/login', async (user, thunkAPI) => {
 
 export const verifyEmail = createAsyncThunk('auth/verifyEmail', async ({ uid, token }) => {
   try {
-    await axios.get('http://localhost:8000/verify/:uidb64/:token/', { uid, token });
+    await axios.get('/verify/:uidb64/:token/', { uid, token });
     return 'Email verified successfully';
   } catch (error) {
     throw new Error('Email verification failed');
