@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-s!1z3bn1r%hi&&mk_c&*!wa20wvy86^5j7d&0qoda8e70jl-l#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -61,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, '../frontend/build'),],
+            os.path.join(BASE_DIR, './frontend/build'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,7 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR, "../frontend/build/static"]
+STATICFILES_DIRS = [BASE_DIR, "./frontend/build/static"]
 STATIC_ROOT = (BASE_DIR/'staticfiles')
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 

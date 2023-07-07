@@ -6,15 +6,12 @@ from .serializers import PredictionSerializer,ListPredictionSerializer
 from .models import Prediction
 import joblib
 from weasyprint import HTML
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404
 from django.http import HttpResponse
-from pathlib import Path
-from django.template.loader import render_to_string
-from rest_framework.views import APIView
 import joblib
 from django.conf import settings
 
-model = joblib.load(settings.BASE_DIR / '../ml_model/heart_disease_model.joblib')
+model = joblib.load(settings.BASE_DIR / './ml_model/heart_disease_model.joblib')
 
 class PredictionCreateAPIView(generics.CreateAPIView):
     serializer_class = PredictionSerializer
