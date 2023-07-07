@@ -1,0 +1,212 @@
+.form-text {
+  text-align: start;
+  position: relative;
+  left: 10%;
+  font-size: 15px;
+  color: darkslategrey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  text-align: center;
+  background-image: url("../../Assets/b1.jpg");
+  background-position: center center;
+}
+
+.sign-in .container, .sign-up .containerp {
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+.sign-in {
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.sign-in .container {
+  height: 290px;
+  width: 65%;
+  position: relative;
+  top: 130px;
+  bottom: 0;
+}
+
+@media screen and (min-width: 850px) {
+  .sign-in .container {
+    height: 290px;
+    width: 35%;
+    position: relative;
+    top: 130px;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .sign-in .container {
+    height: 290px;
+    width: 95%;
+    position: relative;
+    top: 130px;
+    bottom: 0;
+  }
+}
+
+.sign-in .container form ::-webkit-input-placeholder {
+  color: #9799A1;
+  padding-left: 0px;
+}
+
+.sign-in .container form :-ms-input-placeholder {
+  color: #9799A1;
+  padding-left: 0px;
+}
+
+.sign-in .container form ::-ms-input-placeholder {
+  color: #9799A1;
+  padding-left: 0px;
+}
+
+.sign-in .container form ::placeholder {
+  color: #9799A1;
+  padding-left: 0px;
+}
+
+.sign-in .container form .input-field {
+  padding-top: 10px;
+}
+
+.sign-in .container form .input-field input[type="email"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.sign-in .container form .input-field input[type="password"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.sign-in .container form .input-field input {
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+}
+
+.sign-in .container form .input-field #password {
+  position: relative;
+  left: 8px;
+}
+
+.sign-in .container form .input-field img {
+  position: relative;
+  right: 20px;
+}
+
+.sign-in .container form .submit {
+  padding-top: 10px;
+}
+
+.sign-in .container form .submit input {
+  width: 80%;
+  height: 33px;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  color: #fff;
+  background-color: #5db4b4;
+}
+
+.sign-in .container p {
+  font-size: 13px;
+  color: #9799A1;
+  margin-top: 5px;
+}
+
+.sign-in .container p .last-child {
+  color: #97a1aa;
+  font-weight: bolder;
+}
+
+.sign-in-up-header {
+  font-size: 22px;
+  color: #3bccf8;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    height: 290px;
+    width: 5%;
+    position: relative;
+    top: 130px;
+    bottom: 0;
+  }
+}
+
+.sign-up {
+  min-height: 150vh;
+  width: 100%;
+}
+
+.sign-up .containerp {
+  height: 800px;
+  width: 65%;
+  position: relative;
+  top: 50px;
+  bottom: 0;
+}
+
+@media screen and (min-width: 850px) {
+  .sign-up .containerp {
+    height: 800px;
+    width: 40%;
+    position: relative;
+    top: 50px;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .sign-up .containerp {
+    height: 800px;
+    width: 95%;
+    position: relative;
+    top: 50px;
+    bottom: 0;
+  }
+}
+
+.sign-up .containerp .input-field {
+  padding-top: 0;
+}
+
+.sign-up .containerp input {
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+}
+
+.sign-up .containerp .submit {
+  padding-top: 20px;
+}
+
+.sign-up .containerp .submit input {
+  width: 80%;
+  height: 33px;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  color: #fff;
+  background-color: #5db4b4;
+}
+/*# sourceMappingURL=prediction.css.map */

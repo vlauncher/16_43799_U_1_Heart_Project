@@ -1,0 +1,100 @@
+
+@import '../StyleSheet/sign-in.scss';
+
+
+
+.sign-up {
+    min-height: 100vh;
+    width: 100%;
+    // margin: 0;
+    
+    .container {
+        @extend %shared-properties-container;
+        @include container(400px, 65%, relative, 80px, 0 !important);
+        @media screen and (min-width: 850px) {
+            @include container(400px, 40%, relative, 110px, 0 !important);
+        }
+        @media screen and (max-width: 510px) {
+            @include container(370px, 95%, relative, 130px, 0 !important);
+        }
+        
+        form {
+            ::placeholder { 
+                color: #9799A1;
+                padding-left: 0px;
+              }
+
+            .input-field {
+                padding-top: 10px;
+                input[type="text"] {
+                    box-sizing: border-box;
+                    padding-left: 15px;
+                }
+                input[type="email"] {
+                    box-sizing: border-box;
+                    padding-left: 15px;
+                }
+                input[type="password"] {
+                    box-sizing: border-box;
+                    padding-left: 15px;
+                }
+                input[type="tel"] {
+                    box-sizing: border-box;
+                    padding-left: 15px;
+                }
+                input {
+                    width: 80%;
+                    height: 30px;
+                    border-radius: 5px;
+                    border: 1px solid #d4d4d4;
+                }
+                #password {
+                    position: relative;
+                    left: 8px;
+                }
+                img {
+                    position: relative;
+                    right: 20px;
+                }
+            }
+            .submit {
+                padding-top: 10px;
+                input {
+                    width: 83%;
+                    height: 33px;
+                    border-radius: 5px;
+                    border: 1px solid #d4d4d4;
+                    color: #fff;
+                    background-color: rgb(93, 180, 180);
+                    
+                } 
+            }
+        }
+        
+        p {
+            font-size: 13px;
+            color: #9799A1;
+            margin-top: 10px;
+
+            .last-child {
+                color: #0E2A47;
+                font-weight: bolder;
+            }
+        }
+
+    }
+}
+
+.sign-in-up-header {
+    font-size: 22px;
+    color: #9799A1;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+%text-center {
+    text-align: center;
+}
+
+
+

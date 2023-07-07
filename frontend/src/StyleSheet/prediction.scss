@@ -1,0 +1,59 @@
+.form-text {
+    text-align: start;
+    // padding-left: 35px;
+    position: relative;
+    left: 10%;
+    font-size: 15px;
+    color: darkslategrey;
+}
+@import '../StyleSheet/sign-in.scss';
+
+
+
+.sign-up {
+    min-height: 150vh;
+    width: 100%;
+    // margin: 0;
+    
+    .containerp {
+        @extend %shared-properties-container;
+        @include containerp(800px, 65%, relative, 50px, 0);
+        @media screen and (min-width: 850px) {
+            @include containerp(800px, 40%, relative, 50px, 0);
+        }
+        @media screen and (max-width: 510px) {
+            @include containerp(800px, 95%, relative, 50px, 0);
+        }
+        
+        .input-field {
+            padding-top: 0;
+        }
+        input {
+            width: 80%;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid #d4d4d4;
+        }
+        .submit {
+            padding-top: 20px;
+            input {
+                width: 80%;
+                height: 33px;
+                border-radius: 5px;
+                border: 1px solid #d4d4d4;
+                color: #fff;
+                background-color: rgb(93, 180, 180);
+                
+            } 
+        }
+        // .submit {
+        //     width: 80% !important;
+        // }
+    }
+
+}
+
+
+
+
+
